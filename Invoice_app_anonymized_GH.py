@@ -323,25 +323,25 @@ def main():
         )
     
     # Add a bottom border to cells in row 43 (A43:L43)
-    for col_idx in range(1, 13):  # Columns A to L
-        cell = worksheet.cell(row=43, column=col_idx)
-        cell.border = openpyxl.styles.Border(bottom=openpyxl.styles.Side(style='thin'))
+        for col_idx in range(1, 13):  # Columns A to L
+         cell = worksheet.cell(row=43, column=col_idx)
+         cell.border = openpyxl.styles.Border(bottom=openpyxl.styles.Side(style='thin'))
 
 
         # Add a right border to cells in column L (L1:L43)
-    for row_idx in range(1, 44):  # Rows 1 to 43
-        cell = worksheet.cell(row=row_idx, column=12)  # Column L
-        cell.border = Border(right=Side(style='thin'))
+        for row_idx in range(1, 44):  # Rows 1 to 43
+         cell = worksheet.cell(row=row_idx, column=12)  # Column L
+         cell.border = Border(right=Side(style='thin'))
         
    #Add a right border to cells in column L (L1:L43)
-    for row_idx in range(1, 44):  # Rows 1 to 43
-        cell = worksheet.cell(row=row_idx, column=12)  # Column L
-        cell.border = Border(right=Side(style='thin'))
+        for row_idx in range(1, 44):  # Rows 1 to 43
+         cell = worksheet.cell(row=row_idx, column=12)  # Column L
+         cell.border = Border(right=Side(style='thin'))
 
     # Add borders to all cells in row 13 (A13:L13)
-    for col_idx in range(1, 14):  # Columns A to L
-        cell = worksheet.cell(row=13, column=col_idx)
-        cell.border = Border(left=Side(style='thin'), right=Side(style='thin'), top=Side(style='thin'), bottom=Side(style='thin'))                                    
+        for col_idx in range(1, 14):  # Columns A to L
+         cell = worksheet.cell(row=13, column=col_idx)
+         cell.border = Border(left=Side(style='thin'), right=Side(style='thin'), top=Side(style='thin'), bottom=Side(style='thin'))                                    
          
         # List of cell ranges to merge
         cell_ranges_to_merge = ['H20:I20', 'H30:I30', 'H31:I31', 'H33:I33', 'H34:I34']
