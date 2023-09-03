@@ -375,7 +375,7 @@ def main():
         
 
         #config = pdfkit.configuration(wkhtmltopdf="C:\\Program Files\\wkhtmltopdf\\bin\\wkhtmltopdf.exe")
-        #pdfkit.from_file("file.html", "Factuur.pdf",configuration=config)
+        pdfkit.from_file("file.html", "Factuur.pdf")
         
 
         with open("Factuur.pdf", "rb") as file:
