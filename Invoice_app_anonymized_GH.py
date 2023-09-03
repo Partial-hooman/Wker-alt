@@ -374,8 +374,8 @@ def main():
         xlsx2html('Factuur.xlsx', 'file.html')
         
 
-        config = pdfkit.configuration(wkhtmltopdf="C:\\Program Files\\wkhtmltopdf\\bin\\wkhtmltopdf.exe")
-        pdfkit.from_file("file.html", "Factuur.pdf",configuration=config)
+        #config = pdfkit.configuration(wkhtmltopdf="C:\\Program Files\\wkhtmltopdf\\bin\\wkhtmltopdf.exe")
+        #pdfkit.from_file("file.html", "Factuur.pdf",configuration=config)
         
 
         with open("Factuur.pdf", "rb") as file:
